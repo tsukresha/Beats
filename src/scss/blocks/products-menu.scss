@@ -1,0 +1,71 @@
+.products-menu-section {
+  background: url(../../img/girl.png) center center/cover no-repeat;
+  position: relative;
+  color: #FFF;
+}
+.products-menu-section__title {
+  position: absolute;
+  left: rem(155px);
+  top: rem(190px);
+}
+.products__menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  
+  @include phones {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+.products-menu__item {
+  display: flex;
+
+  @include phones {
+    &.active {
+      z-index: 3;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.products-menu__title {
+    position: relative;
+    width: 100px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: rem(67px);
+ 
+  &--color--grey {
+    background: #999;
+  }
+  &--color--black {
+    background: #151515;
+  }
+  &--color--pink {
+    background: #E01F3C;
+  }
+}
+.products-menu__text {
+  font-weight: bold;
+  font-size: rem(36px);
+  transform: rotate(270deg);
+  white-space: nowrap;
+}
+.products-menu__content {
+  width: 0;
+  overflow: hidden;
+  position: relative;
+  transition: width .7s;
+  background: rgba(51, 53, 55, 90%);
+}
+.products-menu__container {
+  padding: 31px 52px 31px 38px;
+}

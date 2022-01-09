@@ -1,0 +1,121 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: rem(24px) rem(0px) rem(50px) rem(0px);
+  background: url('../../img/headphones.png') right center/ rem(490px) no-repeat;
+
+    @include tablets {
+      background: none;
+      padding: rem(24px) rem(0px) rem(90px) rem(0px);
+    }
+
+  &::before {
+  content: url('../../img/sticker.png');
+  position: absolute;
+  bottom:rem(-25px);
+  right: rem(40px);
+  }
+}
+.hero {
+  background-color: #F5F5F5;
+}
+.hero__content {
+
+  @include tablets {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+
+    &::before {
+        content: '';
+        width: rem(340px);
+        height: rem(340px);
+        background: url('../../img/headphones.png') center center/ contain no-repeat;
+        margin-bottom: rem(80px);
+    }
+    }
+
+    @include phones {
+      width: 100%;
+      flex: 0.65;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      
+  
+      &::before {
+          content: '';
+          width: rem(370px);
+          height: rem(370px);
+          background: url('../../img/headphones.png') center top/ contain no-repeat;
+          margin-bottom: rem(49px);
+      }
+      }
+
+}
+.hero__title {
+  font-weight: bold;
+  font-size: rem(48px);
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: rem(21px);
+
+  @include tablets {
+    font-size: rem(51px);
+    margin-bottom: rem(5px);
+  }
+
+  @include phones {
+    max-width: 371px; 
+    font-size: rem(36px);
+    margin-bottom: rem(20px);
+   }
+}
+.hero__subtitle {
+  font-size: rem(21px);
+  margin-bottom: rem(36px);
+  padding-right: 5%;
+  font-family: Alegreya Sans;
+  line-height: 1;
+
+  @include tablets {
+    font-size: rem(22.5px);
+    max-width: 371px;
+    margin: 0 auto rem(23px);
+    padding: 0;
+  }
+
+  @include phones {
+    margin: 0 auto rem(26px);
+  }
+}
+.hero__text-section {
+  max-width: 38%;
+
+  @include tablets {
+    max-width: 86%;
+    padding-bottom: 0;
+  }
+
+  @include phones {
+    max-width: 100%;
+  }
+}
+.hero__icons-section {
+  display: flex;
+  margin-top: rem(70px);
+
+  @include tablets {
+    display: none;
+  }
+}
+  

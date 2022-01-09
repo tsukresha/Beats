@@ -1,0 +1,42 @@
+// breakpoint
+
+$tablets: 768px;
+$phones: 480px;
+
+@import "../scss/layout/media.scss";
+
+// normalize
+// @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+// setups
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Play:wght@400;700&display=swap');
+
+@import "../scss/layout/base.scss";
+@import "../scss/blocks/header.scss";
+@import "../scss/blocks/menu.scss";
+@import "../scss/blocks/logo.scss";
+@import "../scss/blocks/contacts.scss";
+@import "../scss/blocks/hero.scss";
+@import "../scss/blocks/btn.scss";
+@import "../scss/blocks/features.scss";
+@import "../scss/blocks/pager.scss";
+@import "../scss/blocks/section.scss";
+@import "../scss/blocks/headline.scss";
+@import "../scss/blocks/benefit.scss";
+@import "../scss/blocks/benefits.scss";
+@import "../scss/blocks/reviews.scss";
+@import "../scss/blocks/interactive-avatar.scss";
+@import "../scss/blocks/form.scss";
+@import "../scss/blocks/order-section.scss";
+@import "../scss/blocks/radio.scss";
+@import "../scss/blocks/fixed-menu.scss";
+@import "../scss/blocks/hamburger.scss";
+@import "../scss/blocks/footer.scss";
+@import "../scss/blocks/map.scss";
+@import "../scss/blocks/socials.scss";
+@import "../scss/blocks/products.scss";
+@import "../scss/blocks/dropdown.scss";
+@import "../scss/blocks/team.scss";
+@import "../scss/blocks/modal.scss";
+@import "../scss/blocks/products-menu.scss";
+@import "../scss/blocks/video.scss";

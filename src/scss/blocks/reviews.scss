@@ -1,0 +1,120 @@
+.reviews__display {
+  background: #F8FAF9;
+  padding: rem(42px);
+  overflow: hidden;
+  position: relative;
+  margin-bottom: rem(15px);
+  padding: rem(42px) rem(148px) rem(52px) rem(42px);
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  @include tablets {
+    padding: rem(59px) rem(27px) rem(43px);
+    margin-bottom: rem(32px);
+  }
+
+  @include phones {
+    margin-bottom: rem(38px);
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    height: rem(90px);
+    width: rem(90px);
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(-65px);
+  }
+}
+.reviews__display-inner {
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+.reviews__avatar {
+  width: rem(252px);
+  height: rem(254px);
+
+  @include tablets {
+    width: rem(132px);
+    height: rem(132px);
+  }
+
+  @include phones {
+    width: rem(147px);
+    height: rem(150px);
+  }
+}
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.reviews__content {
+  flex: 1;
+  margin-left: rem(40px);
+  padding-top: rem(30px);
+
+  @include tablets {
+    padding-left: 0;
+    padding-top:rem(32px);
+    margin-left: 0;
+  }
+
+  @include phones {
+    padding-top: rem(22.5px);
+  }
+}
+.reviews__title {
+  font-weight: bold;
+  font-size: rem(24px);
+  margin-bottom: rem(27px);
+
+  @include tablets {
+    margin-bottom: rem(16px);
+  }
+
+  @include phones {
+    font-size: rem(29px);
+    margin-bottom: rem(8px);
+  }
+}
+.reviews__text {
+  color: #666666;
+  margin-bottom: rem(38px);
+  line-height: 1.15;
+
+  @include tablets {
+    margin-bottom: rem(16px);
+  }
+
+  @include phones {
+    font-size: rem(18.5px);
+  }
+}
+.reviews__author {
+  font-weight: bold;
+  font-size: rem(18px);
+
+  @include phones {
+    font-size: rem(19px);
+  }
+}
+.reviews__switcher {
+  display: flex;
+  justify-content: center;
+}
+.reviews__main-title {
+  margin-bottom: rem(32px);
+}
